@@ -28,16 +28,17 @@ const CounterHooks = () => {
             : "circle odd";
 
     return (
-      <div className="container">
-        <div className={test}>
-            <p className="number">{counter}</p>
+        <div className="container">
+            <h3>Counter Hooks:</h3>
+            <div className={test}>
+                <p className="number">{counter}</p>
+            </div>
+            <div className="buttons2">
+                <button onClick={addHandler}>Add one</button>
+                <button onClick={removeHandler}>Remove one</button>
+                <button onClick={resetHandler}>Reset</button>
+            </div>
         </div>
-        <div className="buttons2">
-            <button onClick={addHandler}>Add one</button>
-            <button onClick={removeHandler}>Remove one</button>
-            <button onClick={resetHandler}>Reset</button>
-        </div>
-      </div>
     );
 }
 

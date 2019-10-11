@@ -1,1 +1,1 @@
-This is React app called counter.
+Counter & CounterHooks (React app)

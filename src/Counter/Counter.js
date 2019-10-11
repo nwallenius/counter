@@ -4,23 +4,23 @@ import './Counter.css';
 
 class Counter extends Component {
     state = {
-      counter: 0
+        counter: 0
     }
     addHandler = () => {
         this.setState({
-          counter: this.state.counter +1
+            counter: this.state.counter +1
         });
     }
     removeHandler = () => {
         if (this.state.counter > 0) {
             this.setState({
-              counter: this.state.counter -1
+                counter: this.state.counter -1
             });
         }
     }
     resetHandler = () => {
         this.setState({
-          counter: 0
+            counter: 0
           // counter: this.state.counter - this.state.counter
         });
     }
@@ -34,13 +34,14 @@ class Counter extends Component {
   */
 
     render () {
-      return (
-        <div className="container">
+        return (
+            <div className="container">
+                <h1>Counter</h1>
             <div className={
-              this.state.counter === 0 ? "circle zero"
-              : this.state.counter % 10 === 0 ? "circle ten"
-              : this.state.counter % 2 === 0 ? "circle even"
-              : "circle odd"
+                this.state.counter === 0 ? "circle zero"
+                : this.state.counter % 10 === 0 ? "circle ten"
+                : this.state.counter % 2 === 0 ? "circle even"
+                : "circle odd"
             }>
                 <p className="number">{this.state.counter}</p>
             </div>
